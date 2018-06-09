@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&subset=latin-ext,vietnamese');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+::placeholder {
+    color: #fff;
+}
+.container {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.wrapper {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: max-content;
+    width: max-content;
+}
+.body-login {
+    width: 260px;
+    margin: auto;
+    position: relative;
+}
+.body-login > input {
+    background: #fff4;
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+    margin: 5px 0;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.body-login > input[type="submit"]:hover {
+    background: #fff8;
+}
+.body-login > input[type="submit"] {
+    background: #fff;
+    cursor: pointer;
+    transition: background .2s;
+    color: #00c9a7;
+}
+.register {
+    font-size: 14px;
+}
+
+.register > a {
+    color: #000;
+}
