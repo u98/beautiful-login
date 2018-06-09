@@ -5,8 +5,8 @@ body {
     margin: 0;
     padding: 0;
 }
-::placeholder {
-    color: #fff;
+* {
+    box-sizing: border-box;
 }
 .container {
     position: absolute;
@@ -17,6 +17,7 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
+    overflow: hidden;
 }
 .wrapper {
     text-align: center;
@@ -27,15 +28,24 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
-    height: max-content;
-    width: max-content;
+    height: fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    width: -moz-fit-content;
 }
 .body-login {
     width: 260px;
     margin: auto;
     position: relative;
 }
-.body-login > input {
+
+.body-login > input:hover {
+    background: #fff6;
+}
+.body-login > input::placeholder {
+    color: #fff8;
+}
+.body-login > input{
     background: #fff4;
     font-family: 'Quicksand', sans-serif;
     display: block;
@@ -48,6 +58,7 @@ body {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+    transition: background .3s;
 }
 .body-login > input[type="submit"]:hover {
     background: #fff8;
@@ -64,4 +75,23 @@ body {
 
 .register > a {
     color: #000;
+}
+.animation {
+    padding: 0;
+    list-style: none;
+}
+.animation > li {
+    background: #fff2;
+    animation: rotate 9s linear infinite;
+    display: inline-block;
+    position: absolute;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
